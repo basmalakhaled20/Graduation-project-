@@ -1,0 +1,42 @@
+{
+  "simulation": [
+    {
+      "id": 1,
+      "Ia": 12,
+      "Ib": 8,
+      "Ic": 22,
+      "Va": 190,
+      "Vb": 235,
+      "Vc": 100,
+      "result": [
+        {
+          "type": "Line-to-Ground Fault",
+          "phase": "C",
+          "message": "High current & low voltage on Phase C",
+          "confidence": "90%",
+          "Diagnosis": ["Inspect Phase C wiring", "Check insulation", "Check breakers", "Verify grounding"]
+        },
+        {
+          "type": "Undervoltage",
+          "phase": "C",
+          "message": "Voltage too low on Phase C",
+          "confidence": "80%",
+          "Diagnosis": ["Check supply", "Inspect wiring", "Check breakers"]
+        },
+        {
+          "type": "Overload",
+          "phase": "C",
+          "message": "High current on Phase C",
+          "confidence": "80%",
+          "Diagnosis": ["Reduce load", "Check motors", "Verify breakers"]
+        },
+        {
+          "type": "Unbalanced Voltage",
+          "message": "Voltage imbalance > 20%",
+          "confidence": "75%",
+          "Diagnosis": ["Inspect wiring", "Check transformer", "Verify loads"]
+        }
+      ]
+    }
+  ]
+}
